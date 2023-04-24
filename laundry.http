@@ -1,0 +1,38 @@
+POST http://localhost:5000/users/
+Content-Type: application/json
+
+{
+    "username": "vishal123",
+    "password": "vishal123",
+    "phonenumber":"9848437487",
+    "email":"hyderabad@gmail.com"
+}
+###
+
+POST http://localhost:5000/login/
+Content-Type: application/json
+
+{    
+    "username": "thompson123",
+    "password": "thompson123"
+}
+###
+
+POST http://localhost:5000/request/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21wc29uMTIzIiwiaWF0IjoxNjgyMjYzNjMzfQ.-1JxMP5ZGvSEQXX3WZiNKgzL_mInXArZOe-aRIOR8C8
+Content-Type: application/json
+
+{    
+    "date": "22/10/22",
+    "topware": "shirt",
+    "bottomware":"pant",
+    "woolen":"sweter",
+    "service":"dry-clean",
+     "contact": "bharat",
+     "others":"none",
+     "description": "medium-dryclean"
+}
+###
+
+GET http://localhost:5000/status/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InRob21wc29uMTIzIiwiaWF0IjoxNjgyMjYzNjMzfQ.-1JxMP5ZGvSEQXX3WZiNKgzL_mInXArZOe-aRIOR8C8
